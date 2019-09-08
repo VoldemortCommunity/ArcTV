@@ -424,7 +424,6 @@ public class DetailsActivity extends AppCompatActivity {
 
                         videoView.setMediaController(mediacontroller);
                         mediacontroller.setAnchorView(videoView);
-
                     }
                 });
                 videoView.start();
@@ -436,13 +435,12 @@ public class DetailsActivity extends AppCompatActivity {
 
                 progressBar.setVisibility(GONE);
                 return false;
-
             }
         });
         videoView.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                mp.release();
+                //mp.release();
             }
         });
 
